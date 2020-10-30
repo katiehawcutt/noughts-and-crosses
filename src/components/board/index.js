@@ -4,41 +4,36 @@ import Square from "../square/index.js";
 function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
 
-  function handleClick({i}){
-    const updatedSquare = squares.find((square, index) => {
-      return square[index] === i;
-    })
-    console.log(updatedSquare);
-
-    const a = squares.slice(0, i);
-    const b = squares.slice(i+1);
-    setSquares(...a, updatedSquare, ...b);
-    
+  function handleClick(i) {
+    console.log(i);
+    console.log(squares);
+    let updatedSquare = squares[i];
+    updatedSquare = "X";
+    setSquares([
+      ...squares.slice(0, i),
+      updatedSquare,
+      ...squares.slice(i + 1),
+    ]);
+    console.log(squares);
   }
-
-  // handleClick(i) {
-  //   const squares = this.state.squares.slice();
-  //   squares[i] = 'X';
-  //   this.setState({squares: squares});
-  // }
 
   return (
     <div>
       <p>Next Player: X</p>
       <div className="board-row">
-        <Square i={0} handleClick={handleClick}/>
-        <Square i={1} handleClick={handleClick}/>
-        <Square i={2} handleClick={handleClick}/>
+        <Square i={0} handleClick={handleClick} />
+        <Square i={1} handleClick={handleClick} />
+        <Square i={2} handleClick={handleClick} />
       </div>
       <div className="board-row">
-        <Square i={3} handleClick={handleClick}/>
-        <Square i={4} handleClick={handleClick}/>
-        <Square i={5} handleClick={handleClick}/>
+        <Square i={3} handleClick={handleClick} />
+        <Square i={4} handleClick={handleClick} />
+        <Square i={5} handleClick={handleClick} />
       </div>
       <div className="board-row">
-        <Square i={6} handleClick={handleClick}/>
-        <Square i={7} handleClick={handleClick}/>
-        <Square i={8} handleClick={handleClick}/>
+        <Square i={6} handleClick={handleClick} />
+        <Square i={7} handleClick={handleClick} />
+        <Square i={8} handleClick={handleClick} />
       </div>
     </div>
   );
