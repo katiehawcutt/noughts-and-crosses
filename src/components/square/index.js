@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import "./square.css";
 
-function Square() {
-  const [value, setValue] = useState(null);
-
+function Square({ value, handleClick }) {
   return (
     <button
       className="square"
       onClick={() => {
-        setValue("X");
+        handleClick(value);
       }}
     >
       {value}
@@ -17,13 +15,3 @@ function Square() {
 }
 
 export default Square;
-
-// class Square extends React.Component {
-//   render() {
-//     return (
-//       <button className="square">
-//         {this.props.value}
-//       </button>
-//     );
-//   }
-// }
