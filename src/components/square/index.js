@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./square.css";
 
-function Square({ value, handleClick }) {
+function Square({ i, handleClick }) {
   return (
     <button
       className="square"
       onClick={() => {
-        handleClick(value);
+        handleClick(i);
       }}
     >
-      {value}
+      {i}
     </button>
   );
 }
