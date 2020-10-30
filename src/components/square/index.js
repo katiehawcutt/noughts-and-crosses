@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./square.css";
 
-function Square({ i, handleClick }) {
+function Square({ i, handleClick, value }) {
   return (
     <button
       className="square"
@@ -9,7 +9,7 @@ function Square({ i, handleClick }) {
         handleClick(i);
       }}
     >
-      {i}
+      {value[i]}
     </button>
   );
 }
