@@ -47,6 +47,7 @@ function Board({ calculateWinner }) {
     console.log(xIsNext);
   }
 
+  //the below code needs to be refactored
   return (
     <div>
       <Status winner={winner} xIsNext={xIsNext} />
