@@ -4,6 +4,8 @@
 
 #### School of Code Bootcamp - Hackathon Week 6
 
+###### October 2020
+
 _Our Week 6 Hackathon challenge was to make a Noughts & Crosses game! This was the first React hackathon we'd done and it was really interesting as we were following a tutorial that that made Noughts & Crosses with the old style of React - using Class components. Our job was to translate that into new React - Functional Components and hooks!_
 
 ### Main Learning Points:
