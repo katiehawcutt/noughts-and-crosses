@@ -39,12 +39,10 @@ function Board({ calculateWinner }) {
       ...squares.slice(i + 1),
     ];
     const calculatedWinner = calculateWinner(squaresArray);
-    console.log(calculatedWinner);
     setWinner(calculatedWinner);
     setSquares(squaresArray);
 
     setxIsNext(!xIsNext);
-    console.log(xIsNext);
   }
 
   //the below code needs to be refactored
