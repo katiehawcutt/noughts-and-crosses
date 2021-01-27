@@ -8,7 +8,7 @@
 
 _Our Week 6 Hackathon challenge was to make a Noughts & Crosses game! This was the first React hackathon we'd done and it was really interesting as we were following a tutorial that that made Noughts & Crosses with the old style of React - using Class components. Our job was to translate that into new React - Functional Components and hooks!_
 
-### Main Learning Points:
+## Main Learning Points:
 
 - Extracting relevant information from resources that are solving the same problem but in a different way
 - To have stateful components in react before hooks were invented you had to write a class component
@@ -19,3 +19,36 @@ _Our Week 6 Hackathon challenge was to make a Noughts & Crosses game! This was t
 - you can have more than one `useState()` in a component
 - `useState()` is asynchronous which can sometimes cause problems!
 - even if you're following a tutorial it's still important to make a plan
+
+## Built with:
+
+- HTML
+- CSS
+- JavaScript
+- React
+
+## Getting Started:
+
+Clone the repo as instructed below
+
+## Prerequisites:
+
+Download and install npm modules
+
+## Installation
+
+1.  Clone the repo
+
+`git clone https://github.com/katiehawcutt/noughts-and-crosses.git`
+
+2. Install the required npm modules
+
+`npm i`
+
+3. Start the application
+
+`npm start`
+
+## Usage
+
+Play a game of noughts and crosses!

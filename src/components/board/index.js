@@ -45,7 +45,7 @@ function Board({ calculateWinner }) {
     setxIsNext(!xIsNext);
   }
 
-  //the below code needs to be refactored
+  //the below code needs to be refactored as there is a lot of repetition
   return (
     <div>
       <Status winner={winner} xIsNext={xIsNext} />
